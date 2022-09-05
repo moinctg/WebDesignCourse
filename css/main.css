@@ -16,6 +16,12 @@ body{
     margin-left: 5%;
     padding-left: 2%;
 }
+/* .full-width{
+    width:100%;
+    margin-left: 20%;
+    padding-left: 2%;
+    margin-bottom: 10%;
+} */
 .haif-width p{
     font-size: 15px;
     padding:3px;
@@ -56,7 +62,7 @@ h1 span {
  .nav ul{
    
    list-style: none;
-   margin: 0;
+   margin-left: 15%;
    padding: 0;
    overflow: hidden;
    
@@ -65,18 +71,44 @@ h1 span {
     
 }
 .nav li{
-    float:right;
-    
+   
+    float:left;
+    margin-right: 20px;
    
 }
 .nav li a{
     
-    display:block ;
-    color: white;
+    display:inline ;
+    color: rgb(33, 31, 31);
     text-align: center;
     padding-right: 14px 16px;
     text-decoration: none;
 }
+.nav:hover{
+    color:  orangered; 
+}
+.nav:visited{
+    color:rgb(225, 65, 89);
+}
+
+ .service-head{
+    text-align: center;
+    font-weight: 700;
+
+}
+.service-content{
+    text-align: center;
+    padding: 3px;
+    font-size: 12px;
+    color:burlywood;
+}
+.service-right{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
 .article{
     width: 40%;
     text-align: center;
@@ -85,26 +117,12 @@ h1 span {
     font-weight: 300;
 }
 
-.service{
-    margin: 250px;
-    width: 60%;
-    padding: 5px;
-
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    align-items: flex-start;
-    background-color: beige;
-}
-.service h2 p{
-    text-align: center;
-
-}
-
 
 .fotter{
+    width: 100%;
     text-align: center;
     color: orangered;
-    background-color: khaki;
+    background-color: rgb(224, 222, 204);
     padding:4px;
     
 }
