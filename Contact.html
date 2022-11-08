@@ -3,30 +3,72 @@
     <title>
         This simple web site
     </title>
+    <link rel="stylesheet" type="text/css" href="css/form.css" /> 
 </head>
 <body>
-    <h2>Contact Form</h2>
-        <div class="container">
-            <label for ="fname">First Name:</label> </br>
-            <input type="text" id="fname" name="firstname" placeholder="your first name"/> <br>
-            <label for ="fname">Last Name:</label> </br>
-            <input type="text" id="fname" name="lastname" placeholder="your last name"/> <br>
-            <label for="country">Country</label>
-            <select id="country" name="country"> 
-                <option value="Chittagong">Chittagong</option>
-                <option value="Chittagong">Chittagong</option>
-                <option value="Chittagong">Chittagong</option> 
-            </select>
-           
-            
-                <label for="subject">subject</label>   <br/>
-                <textarea id="subject" name="subject" placeholder="write somthing"></textarea>
-        </div>
-
-   
-
-    
-
+    <h2>Register Form</h2>
+    <div class="container">
+        <form action="/action_page.php">
+            <legend>Registration Form</legend>
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">First Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Last Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+                <label for="lname">Email</label>
+              </div>
+            <div class="col-75">
+                <input type="text" id="fname" name="Email" placeholder="Your Email..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+                <label for="lname">Password</label>
+              </div>
+            <div class="col-75">
+                <input type="password" id="fname" name="password" placeholder="Your password..">
+            </div>
+          </div>
+         
+          <div class="row">
+            <div class="col-25">
+              <label for="country">Country</label>
+            </div>
+            <div class="col-75">
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Subject</label>
+            </div>
+            <div class="col-75">
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+          </div>
+        </form>
+      </div>
 <br/>
 <br/>
     <a href="Index.html">Back Page</a>
